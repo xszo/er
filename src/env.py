@@ -18,9 +18,9 @@ PATH_OUT_NET = PATH_OUT / NAME_NET
 PATH_OUT_RULE = PATH_OUT / NAME_RULE
 
 # remote
-REMOTE_URI = "https://xszo.github.io/er/"
-REMOTE_URI_NULL = "https://xszo.github.io/er/null"
-REMOTE_URI_NET = REMOTE_URI + NAME_NET + "/"
-REMOTE_URI_RULE = REMOTE_URI + NAME_RULE + "/"
+REMOTE_URL = "https://xszo.github.io/er/"
+REMOTE_URL_NULL = "https://xszo.github.io/er/null"
+REMOTE_URL_NET = REMOTE_URL + NAME_NET + "/"
+REMOTE_URL_RULE = REMOTE_URL + NAME_RULE + "/"
 
-REMOTE_INTERVAL = 86400
+REMOTE_INTERVAL = 604800

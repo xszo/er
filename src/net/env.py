@@ -17,12 +17,12 @@ PATH_TMP = __env.PATH_TMP_NET
 PATH_OUT = __env.PATH_OUT_NET
 
 # load.py
-URI = __env.REMOTE_URI
-URI_NET = __env.REMOTE_URI_NET
+URI = __env.REMOTE_URL
+URI_NET = __env.REMOTE_URL_NET
 INT = __env.REMOTE_INTERVAL
 
 # dump.py
-REMOTE_URI_NULL = __env.REMOTE_URI_NULL
+REMOTE_URI_NULL = __env.REMOTE_URL_NULL
 EXT_QUANTUMULT_PARSER = (
     "https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js"
 )

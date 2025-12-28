@@ -5,7 +5,7 @@ def write_index(dire: Path, link: str) -> str:
     """generate index.html for dire"""
     html = ""
     # iterate through dir for link tree
-    for file in sorted(dire.iterdir(), key=lambda i: i.name):
+    for file in sorted(dire.iterdir(), key=lambda x: x.name):
         fname = file.name
         # skip hidden files
         if fname[0] == "." or fname == "index.html":

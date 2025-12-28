@@ -13,13 +13,15 @@ NAME_IPASN = "ipas"
 NAME_IPGEO = "ipgeo"
 NAME_SURGE = "s"
 NAME_CLASH = "c"
+NAME_QUANTUMULT = "q"
 
 # path
 PATH_VAR = __env.PATH_VAR_RULE
 PATH_VAR_META = PATH_VAR / "list.yml"
 PATH_TMP = __env.PATH_TMP_RULE
 PATH_OUT = __env.PATH_OUT_RULE
-REMOTE_URI = __env.REMOTE_URI_RULE
+
+REMOTE_URL = __env.REMOTE_URL_RULE
 
 # getrex.py
 REX_COMMENT = re_c("^\\s*($|#|!)")
@@ -32,9 +34,9 @@ REX_VAR = [
 ]
 
 # getvlc.py
-VLC_URI = "https://github.com/v2fly/domain-list-community"
-VLC_REPO = PATH_TMP / "vlc"
-VLC_DATA = VLC_REPO / "data"
+VLC_REPO_URL = "https://github.com/v2fly/domain-list-community"
+VLC_REPO_PATH = PATH_TMP / "vlc"
+VLC_DATA = VLC_REPO_PATH / "data"
 VLC_REX_INCL = re_c("^include:([\\w\\-\\!]+)\\s*(?:#.*)?$")
 VLC_REX_RULE = (
     (

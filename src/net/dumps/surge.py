@@ -41,7 +41,6 @@ def base(out, loc: dict) -> None:
         "[General]",
         "loglevel = warning",
         "wifi-assist = true",
-        "ipv6 = true",
         "internet-test-url = " + __src["misc"]["test"],
         "proxy-test-url = " + __src["misc"]["test"],
         "proxy-test-udp = " + __src["misc"]["t-dns"],

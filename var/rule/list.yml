@@ -6,9 +6,9 @@ list:
   - tw r-tw vltw
   - us r-us vlus
   - >-
-    ww
+    world
     -cn -jp -tw -us
-    world vlworld gfwlist
+    r-world vlworld gfwlist
   - >-
     block
     adguard vlblock
@@ -44,19 +44,19 @@ vlc:
 # Parse Online list
 # {reg}
 get:
-  - uri: https://cdn.jsdelivr.net/gh/gfwlist/gfwlist@master/gfwlist.txt
+  - url: https://cdn.jsdelivr.net/gh/gfwlist/gfwlist@master/gfwlist.txt
     # use preprocessor
     pre: [b64]
     # use regular expression to convert into sublist
-    reg:
+    get:
       gfwlist:
         # match pattern, expand pattern
         - d  ^\=bs\\=dn\\=ed\  .\1
         - d  ^\=bn\\=dn\\=ed\  \1
 
-  - uri: https://filters.adtidy.org/ios/filters/15.txt
+  - url: https://filters.adtidy.org/ios/filters/15.txt
     pre: []
-    reg:
+    get:
       adguard:
         - d  ^\=bs\\=dn\\=ed\  .\1
         - d  ^\=bn\\=dn\\=ed\  \1

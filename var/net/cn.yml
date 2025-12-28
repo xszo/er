@@ -7,7 +7,7 @@ tar:
 route:
   - id: ww
     node: { id: tw }
-    filter: [type: main, use: ww]
+    filter: [type: main, use: world]
   - id: cn
     node: { id: direct }
     filter: [use: cn]

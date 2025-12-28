@@ -16,12 +16,12 @@ def run() -> None:
 
     (rexer := getrex()).add_var(meta["var"])
     for line in meta["get"]:
-        rexer.add(line["uri"], line["reg"], pre=line["pre"])
+        rexer.add(line["url"], line["get"], pre=line["pre"])
     __merge(data, rexer.get())
 
     vlcer = getvlc()
-    for k, v in meta["vlc"].items():
-        vlcer.add(k, v)
+    for key, val in meta["vlc"].items():
+        vlcer.add(key, val)
     __merge(data, {NAME_DOMAIN: vlcer.get()})
 
     ls = {}
@@ -32,7 +32,7 @@ def run() -> None:
     (remixer := remix()).add(data)
     for k, v in ls.items():
         remixer.mix(k, v)
-    data = remixer.get(ls.keys())
+    data = remixer.get(tuple(ls.keys()))
 
     dump().dump(data)
 

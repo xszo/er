@@ -28,7 +28,7 @@ route:
       list: [-direct, -reject, =node]
     filter:
       - type: main
-      - use: ww
+      - use: world
     icon:
       sort: 0
       emoji: 🏳️‍🌈
