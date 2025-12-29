@@ -15,7 +15,7 @@ def run() -> None:
     data = load().get()
 
     (rexer := getrex()).add_var(meta["var"])
-    for line in meta["get"]:
+    for line in meta["rex"]:
         rexer.add(line["url"], line["get"], pre=line["pre"])
     __merge(data, rexer.get())
 

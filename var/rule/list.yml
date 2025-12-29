@@ -43,7 +43,7 @@ vlc:
 
 # Parse Online list
 # {reg}
-get:
+rex:
   - url: https://cdn.jsdelivr.net/gh/gfwlist/gfwlist@master/gfwlist.txt
     # use preprocessor
     pre: [b64]

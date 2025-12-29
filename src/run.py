@@ -2,7 +2,6 @@ from argparse import ArgumentParser
 from subprocess import run
 
 from .net import run as _net
-from .out import run as _out
 from .rule import run as _rule
 
 # shell arguments
@@ -23,7 +22,6 @@ if __arg.i:
 if __arg.a or __arg.g:
     _rule.run()
     _net.run()
-    _out.run()
 if __arg.c:
     # format yaml
     run(["npx", "prettier", ".", "--write"], check=False)

@@ -1,18 +1,16 @@
-# xszo/er
+# xszo/c-network
 
-ER, Remix of Etc.
+Config for Network Tools like Surge, Quantumult, Clash ...
 
 ## About
 
-Release in `out/` on <https://xszo.github.io/er/>
+Release in `out/` on <https://www.jsdelivr.com/package/gh/xszo/cr>
 
-Documents in `doc/` on <https://github.com/xszo/er/wiki>
+Documents in `doc/` on <https://github.com/xszo/c-network/wiki>
 
-Code in `run`, `src/`, `var/` on <https://github.com/xszo/er/tree/main>
+Code in `run`, `src/`, `var/` on <https://github.com/xszo/c-network>
 
 ## Using
-
-`git switch main;`
 
 `./run -ig;`
 
@@ -27,7 +25,7 @@ Development
 ## External
 
 - `doc/`  *GNU GPL 3.0* & _CC BY-SA 4.0_  
-  <https://github.com/xszo/er/wiki>
+  <https://github.com/xszo/c-network/wiki>
 - `out/rule/*-dn-*.txt`  *MIT*  
   <https://github.com/v2fly/domain-list-community>
 - `out/rule/block-dn-*.txt`  *GNU GPL 3.0*  
