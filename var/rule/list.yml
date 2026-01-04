@@ -18,25 +18,31 @@ vlc:
   # id list
   vlcn:
     - geolocation-cn
+    - tld-cn
   vljp:
     - 5ch
     - abema
     - cygames
     - dlsite
+    - dlsite
     - dmm
     - misskey
     - niconico
     - pixiv
-    - projectsekai
+    - rakuten
   vltw:
     - 18comic
     - bahamut
+    - kktv
+    - picacg
     - viu
   vlus:
     - ehentai
   vlworld:
     - apple
+    - microsoft
     - geolocation-!cn
+    - category-porn
   vlblock:
     - category-ads-all
     - category-httpdns-cn
@@ -44,7 +50,7 @@ vlc:
 # Parse Online list
 # {reg}
 rex:
-  - url: https://cdn.jsdelivr.net/gh/gfwlist/gfwlist@master/gfwlist.txt
+  - url: https://cdn.jsdelivr.net/gh/gfwlist/gfwlist/gfwlist.txt
     # use preprocessor
     pre: [b64]
     # use regular expression to convert into sublist

@@ -10,18 +10,6 @@ Documents in `doc/` on <https://github.com/xszo/c-network/wiki>
 
 Code in `run`, `src/`, `var/` on <https://github.com/xszo/c-network>
 
-## Using
-
-`./run -ig;`
-
-Production
-
-`python 3.12`, `pyyaml`, `requests`
-
-Development
-
-`prettier`, `pip pylint`, `pip black`, `pip isort`
-
 ## External
 
 - `doc/`  *GNU GPL 3.0* & _CC BY-SA 4.0_  
